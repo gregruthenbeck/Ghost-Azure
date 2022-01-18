@@ -11,6 +11,7 @@
     "sku": {
       "type": "string",
       "allowedValues": [
+        "Free",
         "Basic",
         "Standard",
         "Premium"
@@ -54,7 +55,7 @@
     },
     "repoUrl": {
       "type": "string",
-      "defaultValue": "https://github.com/<<PutYourGitHubUserHere>>/Ghost-Azure"
+      "defaultValue": "https://github.com/gregruthenbeck/Ghost-Azure"
     },
     "branch": {
       "type": "string",
@@ -126,7 +127,7 @@
             "mail__options__auth__user": "[parameters('Email Username')]",
             "mail__options__auth__pass": "[parameters('Email Password')]",
             "mail__from": "[parameters('Email From Address')]",
-            "WEBSITE_NODE_DEFAULT_VERSION": "~10",
+            "WEBSITE_NODE_DEFAULT_VERSION": "~14",
             "NODE_ENV": "production",
             "APPINSIGHTS_INSTRUMENTATION_KEY": "[reference(concat('Microsoft.Insights/components/', variables('appInsightsName'))).InstrumentationKey]"
           }
