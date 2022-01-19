@@ -107,7 +107,7 @@
             "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
           ],
           "properties": {
-            "use32BitWorkerProcess": true,
+            "use32BitWorkerProcess": false,
             "httpsOnly": true,
             "alwaysOn": true
           }
